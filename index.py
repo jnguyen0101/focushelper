@@ -44,7 +44,7 @@ while cap.isOpened():
             ret, v_frame = video_cap.read()
 
         if ret and v_frame is not None:
-            v_frame = cv2.resize(v_frame, (640, 360)) 
+            v_frame = cv2.resize(v_frame, (360, 640)) 
             
             cv2.imshow(video_window_name, v_frame)
             window_open = True
